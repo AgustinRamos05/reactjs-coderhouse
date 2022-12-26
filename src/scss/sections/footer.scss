@@ -1,0 +1,23 @@
+.footer {
+  background-color: rgb(209, 209, 209);
+  max-height: 6rem;
+  
+  &__nav {
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__link {
+    padding: 1rem;
+    text-decoration: none;
+    color: rgb(59, 59, 59);
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  &__copyright{
+    padding:  0 0 .5rem 1rem;
+    color: rgb(59, 59, 59);
+  }
+}

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root{
+  height: 100%;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+}
+
+@import './sections/header.scss';
+@import './sections/footer.scss';
+@import './sections/main.scss';
