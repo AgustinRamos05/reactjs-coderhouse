@@ -3,5 +3,12 @@
     background-color: rgb(247, 247, 247);
     &__title{
         padding: 1rem;
+        color: white;
+        position: absolute;
+        top: 28rem;
+        font-family: 'Palanquin', sans-serif;
+    }
+    &__banner{
+        width: 100%;
     }
 }
