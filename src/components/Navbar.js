@@ -1,8 +1,12 @@
 import React from "react";
 import CartWidget from "./CartWidget";
 
+
 const Nav = (props) => {
-  if (props.isHeader) {
+
+  const {isHeader,hrefFacebook,hrefTwitter,hrefInstagram } = props
+
+  if (isHeader) {
     return (
       <nav className="header__nav">
         <a href="#" className="header__link">
@@ -19,13 +23,13 @@ const Nav = (props) => {
   } else {
     return (
       <div className="footer__nav">
-        <a href={props.hrefFacebook} className="footer__link">
+        <a href={hrefFacebook} className="footer__link">
           Facebook
         </a>
-        <a href={props.hrefTwitter} className="footer__link">
+        <a href={hrefTwitter} className="footer__link">
           Twitter
         </a>
-        <a href={props.hrefInstagram} className="footer__link">
+        <a href={hrefInstagram} className="footer__link">
           Instagram
         </a>
       </div>
