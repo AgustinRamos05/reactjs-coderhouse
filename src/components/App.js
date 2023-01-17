@@ -1,17 +1,16 @@
 
+import { BrowserRouter } from 'react-router-dom';
 import Footer from './Footer';
 import Header from './Header';
-import ItemListContainer from './ItemListContainer';
 import Main from './Main';
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Header/>
       <Main/>
-      <ItemListContainer greeting = "React js"/>
       <Footer/>
-    </>
+    </BrowserRouter>
   );
 }
 

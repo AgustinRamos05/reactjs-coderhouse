@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import CartWidget from "./CartWidget";
 
 
@@ -9,15 +10,18 @@ const Nav = (props) => {
   if (isHeader) {
     return (
       <nav className="header__nav">
-        <a href="#" className="header__link">
-          About us
-        </a>
-        <a href="#" className="header__link">
-          Log in
-        </a>
-        <a href="#" className="header__link header__cart" >
+        <Link to="/products/indumentaria" className="header__link">
+          Indumentaria
+        </Link>
+        <Link to="/products/accesorios" className="header__link">
+          Accesorios
+        </Link>
+        <Link to="/products/electronicos" className="header__link">
+          Electronicos
+        </Link>
+        <Link to="#" className="header__link header__cart" >
           <CartWidget/>
-        </a>
+        </Link>
       </nav>
     );
   } else {

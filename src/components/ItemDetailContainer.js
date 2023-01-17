@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react'
-import ItemList from './ItemList'
+import ItemDetail from './ItemDetail'
 
 
-const ItemListContainer = () => {
+const ItemDetailContainer = () => {
 
   const [load,setLoad] = useState(false)
   const [products, setProducts] = useState([])
 
   useEffect(()=>{
-
+  
     const order = fetch('https://fakestoreapi.com/products')
 
     .then((res)=>{
@@ -22,19 +22,15 @@ const ItemListContainer = () => {
     .catch((err)=>{
       console.log(err)
     })
+    
 
   },[])
-
-  console.log(products);
-
-  return(
+  return (
     <div>
-        {load ? <h3>Productos</h3> : <h3>Cargando...</h3>}
-        <ItemList products={products}/>
+      {load ? "" : <h3>Cargando...</h3>}
+      <ItemDetail products={products}/>
     </div>
   )
-
 }
 
-export default ItemListContainer
-
+export default ItemDetailContainer
