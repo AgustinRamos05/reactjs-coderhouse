@@ -18,11 +18,10 @@
         .product{
             display: flex;
             flex-direction: column;
-            width:16rem;
+            width:14rem;
             margin: 2rem;            
             &__img{
                 width: 100%;
-                height: 20rem;
             }
         }
     }

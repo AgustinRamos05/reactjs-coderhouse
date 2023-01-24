@@ -1,11 +1,13 @@
 import React from "react";
 
-const ItemDetail = ({ products }) => {
+const ItemDetail = ({ product }) => {
+  console.log(product)
   return (
-    <div key={products.id} className="product">
-      <img src={products.image} alt={products.title} className="product__img" />
-      <h5 className="product__title">{products.title}</h5>
-      <p className="product__price">{products.price}</p>
+    <div key={product.id} className="product">
+      {/* <img src={product.image} alt={product.title} className="product__img" />
+      <h5 className="product__title">{product.title}</h5>
+      <p className="product__price">{product.price}</p>
+      <p>{product.description}</p> */}
     </div>
   );
 };

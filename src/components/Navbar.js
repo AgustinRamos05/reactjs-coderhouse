@@ -10,15 +10,15 @@ const Nav = (props) => {
   if (isHeader) {
     return (
       <nav className="header__nav">
-        <Link to="/products/indumentaria" className="header__link">
-          Indumentaria
+        <Link to="/category/iphone" className="header__link">
+          Iphone
         </Link>
-        <Link to="/products/accesorios" className="header__link">
-          Accesorios
+        <Link to="/category/ipad" className="header__link">
+          Ipad
         </Link>
-        <Link to="/products/electronicos" className="header__link">
+        {/* <Link to="/category/electronicos" className="header__link">
           Electronicos
-        </Link>
+        </Link> */}
         <Link to="#" className="header__link header__cart" >
           <CartWidget/>
         </Link>

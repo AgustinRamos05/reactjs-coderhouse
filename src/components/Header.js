@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className="header">
       <Link to="/">
-        <h1 className="header__logo">Virtual Shop</h1>
+        <h1 className="header__logo">IponeShop</h1>
       </Link>
       <Nav isHeader={true} />
     </header>
