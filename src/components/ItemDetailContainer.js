@@ -8,7 +8,7 @@ const ItemDetailContainer = () => {
   let { id } = useParams();
 
   useEffect(() => {
-    fetch("http://localhost:3000/stock.json")
+    fetch("stock.json")
       .then((res) => {
         const product = res.json();
         return product;
@@ -24,6 +24,8 @@ const ItemDetailContainer = () => {
 
   const item = products.find((product) => product.id === id);
   console.log(item)
+
+  
   
   return (
     <div>
