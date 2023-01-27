@@ -4,7 +4,7 @@
     "title": "Iphone 8",
     "price": 240,
     "stock": 3,
-    "image": "./img/3770003825319-photosite-20210217-173118-0.webp",
+    "image": "/img/3770003825319-photosite-20210217-173118-0.webp",
     "category": "iphone",
     "description": "Apple iPhone 8 es un smartphone de 2017. Mide 138.4 x 67.3 x 7.3 mm y pesa 148 g. Tiene una pantalla LED-backlit IPS LCD de 4.7 pulgadas. La resolución es de 750 x 1334 y 326 ppi de densidad de píxeles."
   },
@@ -13,7 +13,7 @@
     "title": "Iphone 8 Plus",
     "price": 300,
     "stock": 4,
-    "image": "./img/iphone-8plus-zwart-multi_600x600_BGresize_16777215-tj.png",
+    "image": "/img/iphone-8plus-zwart-multi_600x600_BGresize_16777215-tj.png",
     "category": "iphone",
     "description": "El Apple iPhone 8 Plus conserva la misma pantalla de su antecesor, con 5.5 pulgadas a resolución Full HD, con un nuevo diseño que combina aluminio con vidrio adelante y atrás. Por dentro, el iPhone 8 Plus está potenciado por el procesador A11 Bionic. El iPhone 8 Plus vuelve a contar con una cámara dual de 12 MP, con zoom óptico 2X, y aperturas combinables para efectos de fotografía y slow motion en 1080p y agrega soporte para carga inalámbrica en su batería con el mismo rendimiento que en el iPhone 7 Plus."
   },
@@ -22,7 +22,7 @@
     "title": "Iphone XS",
     "price": 350,
     "stock": 2,
-    "image": "./img/iphone-xsmax-zilver-multiapple_600x600_BGresize_16777215-tj.png",
+    "image": "/img/iphone-xsmax-zilver-multiapple_600x600_BGresize_16777215-tj.png",
     "category": "iphone",
     "description": "El Apple iPhone XS es el sucesor del iPhone X. Su camara es dual de 12 MP, con zoom óptico 2X y estabilización de imagen, mientras que al frente cuenta con una cámara de 7 MP para selfies."
   },
@@ -31,7 +31,7 @@
     "title": "Iphone 11",
     "price": 425,
     "stock": 6,
-    "image": "./img/593ebd1f-15f4-4b60-a3ce-89d3c1161ccd.jpg",
+    "image": "/img/593ebd1f-15f4-4b60-a3ce-89d3c1161ccd.jpg",
     "category": "iphone",
     "description": "Un nuevo sistema de dos cámaras. Una batería para todo el día. El vidrio más resistente en un smartphone. Y el chip más rápido de Apple."
   },
@@ -40,7 +40,7 @@
     "title": "Iphone 12",
     "price": 560,
     "stock": 6,
-    "image": "./img/apple-iphone-12--64gb-mjnm3gha-purple----mjnm3gha.jpg",
+    "image": "/img/apple-iphone-12--64gb-mjnm3gha-purple----mjnm3gha.jpg",
     "category": "iphone",
     "description": "Tecnología 5G. Chip A14 Bionic, el más veloz en un smartphone. Pantalla OLED de borde a borde. Ceramic Shield, cuatro veces más resistente a las caídas. Modo Noche en cada una de las cámaras."
   },
@@ -49,7 +49,7 @@
     "title": "iPad Pro 12.9 Pulgadas",
     "price": 520,
     "stock": 3,
-    "image": "./img/descarga.jpg",
+    "image": "/img/descarga.jpg",
     "category": "ipad",
     "description": "La experiencia iPad definitiva. Ahora con el rendimiento increíble del chip M1, una pantalla XDR espectacular y conexión 5G ultrarrápida. Abróchate el cinturón."
   },
@@ -58,7 +58,7 @@
     "title": "iPad Air 10.9 Pulgadas",
     "price": 480,
     "stock": 3,
-    "image": "./img/descarga2.jpg",
+    "image": "/img/descarga2.jpg",
     "category": "ipad",
     "description": "El iPad Air hace más que un ordenador y usarlo es tan fácil que a veces parece magia. Y con las nuevas prestaciones es más versátil que nunca."
   }

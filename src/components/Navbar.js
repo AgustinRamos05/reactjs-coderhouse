@@ -16,9 +16,6 @@ const Nav = (props) => {
         <Link to="/category/ipad" className="header__link">
           Ipad
         </Link>
-        {/* <Link to="/category/electronicos" className="header__link">
-          Electronicos
-        </Link> */}
         <Link to="#" className="header__link header__cart" >
           <CartWidget/>
         </Link>

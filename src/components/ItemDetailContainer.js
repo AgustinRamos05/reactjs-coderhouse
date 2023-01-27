@@ -8,29 +8,24 @@ const ItemDetailContainer = () => {
   let { id } = useParams();
 
   useEffect(() => {
-    fetch("stock.json")
+    fetch("/stock.json")
       .then((res) => {
         const product = res.json();
         return product;
       })
       .then((product) => {
-        setProducts(product);
+        setProducts(product.find((prod) => prod.id === id ));
         setLoad(true);
       })
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  }, [id]);
 
-  const item = products.find((product) => product.id === id);
-  console.log(item)
-
-  
-  
   return (
-    <div>
+    <div className="productContainer">
       {load ? "" : <h3>Cargando...</h3>}
-      <ItemDetail product={item}/>
+      <ItemDetail product={products}/>
     </div>
   );
 };
