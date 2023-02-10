@@ -23,10 +23,10 @@ const ItemDetailContainer = () => {
   }, [id]);
 
   return (
-    <div className="productContainer">
+    <>
       {load ? "" : <h3>Cargando...</h3>}
       <ItemDetail product={products}/>
-    </div>
+    </>
   );
 };
 

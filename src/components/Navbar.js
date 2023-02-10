@@ -16,7 +16,7 @@ const Nav = (props) => {
         <Link to="/category/ipad" className="header__link">
           Ipad
         </Link>
-        <Link to="#" className="header__link header__cart" >
+        <Link to="/cart" className="header__link header__cart" >
           <CartWidget/>
         </Link>
       </nav>

@@ -1,54 +1,80 @@
-.main{
-    flex-grow: 1;
-    background-color: rgb(247, 247, 247);
-    &__title{
-        padding: 1rem;
-        color: white;
-        position: absolute;
-        top: 28rem;
-        font-family: 'Palanquin', sans-serif;
-    }
-    &__banner{
+.main {
+  flex-grow: 1;
+  background-color: rgb(247, 247, 247);
+  &__title {
+    padding: 1rem;
+    color: white;
+    position: absolute;
+    top: 28rem;
+    font-family: "Palanquin", sans-serif;
+  }
+  &__banner {
+    width: 100%;
+  }
+  .productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .product {
+      display: flex;
+      flex-direction: column;
+      width: 14rem;
+      margin: 2rem;
+      padding: 0.5rem;
+      background-color: white;
+      border: 2px rgb(187, 187, 187) solid;
+      &__img {
         width: 100%;
-    }
-    .productContainer{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        .product{
-            display: flex;
-            flex-direction: column;
-            width:14rem;
-            margin: 2rem;
-            padding: .5rem;
-            background-color: white;
-            border: 2px rgb(187, 187, 187) solid;            
-            &__img{
-                width: 100%;
-            }
-            &__title{
-                font-size: 1.2rem;
-                font-weight: 300;
-                padding: .5rem;
-            }
-            &__price{
-                font-size: 1rem;
-                padding: 0 .5rem;
-            }
-            &__description{
-                font-size: 1rem;
-                font-weight: 300;
-                padding: .5rem;
-            }
-            .btn{
-                padding: .5rem;
-                margin-top: .5rem;
-                background-color: rgb(0, 0, 99);
-                color: white;
-                text-align: center;
-                width: 8rem;
-            }
-            }
+      }
+      &__title {
+        font-size: 1.2rem;
+        font-weight: 300;
+        padding: 0.5rem;
+      }
+      &__price {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+      }
 
-        }
+      .btn {
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+        background-color: rgb(0, 0, 99);
+        color: white;
+        text-align: center;
+        width: 8rem;
+      }
     }
+  }
+  .product-detail {
+    display: flex;
+    width: 25rem;
+    margin: 3rem auto;
+    
+    &__img {
+      width: 16rem;
+      height: 17rem;
+      border: 2px rgb(187, 187, 187) solid;
+    }
+    &__container {
+      display: flex;
+      width: 15rem;
+      flex-direction: column;
+      padding: 0 2rem;
+    }
+    &__title {
+      font-size: 1.2rem;
+      font-weight: 300;
+      padding: 0.5rem;
+    }
+    &__price {
+      font-size: 1rem;
+      padding: 0 0.5rem;
+    }
+    &__description {
+      font-size: 1rem;
+      font-weight: 300;
+      padding: 0.5rem;
+    }
+  }
+}
