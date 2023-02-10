@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemList from "./ItemList";
+import { db } from "../firebase";
+import { collection, getDocs } from "firebase/firestore";
 
 const ItemListContainer = () => {
   const [load, setLoad] = useState(false);
@@ -8,7 +10,17 @@ const ItemListContainer = () => {
   const { id } = useParams();
 
   useEffect(() => {
-     fetch("/stock.json")
+    const productCollection = collection(db, "products");
+    const firestoreRequest = getDocs(productCollection);
+     firestoreRequest
+     .then((res) =>{
+      console.log(res)
+     })
+     .catch((err) =>{
+      console.log(err)
+     });
+
+    fetch("/stock.json")
       .then((res) => {
         const product = res.json();
         return product;

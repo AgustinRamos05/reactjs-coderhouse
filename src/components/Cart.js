@@ -16,14 +16,14 @@ const Cart = () => {
   const handelClick = () =>{
     console.log(name, email)
   }
-  console.log("render")
+  
 
   return (
     <div>
       <div>
         {cart.map((product) => {
           return (
-            <CartItem product={product} key={product.id} id={product.id} />
+            <CartItem product={product} key={product.id} id={product.id}/>
           );
         })}
       </div>

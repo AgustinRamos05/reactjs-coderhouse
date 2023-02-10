@@ -18,10 +18,10 @@ const ItemCount = ({stock, onAdd, product, id}) => {
     }
     const handleConfirm = () => {
         onAdd(accountant);
-        setAccontant(1);
-        productsQuantity(accountant)
+        productsQuantity(accountant);
         isInCart(id);
-        addToCart(product, id);
+        addToCart(product, id, accountant);
+        setAccontant(1);
     }
 
   return (

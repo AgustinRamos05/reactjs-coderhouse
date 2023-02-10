@@ -1,9 +1,9 @@
-// Import the functions you need from the SDKs you need
+//Traigo una funcion que me conecta la app de react (codigo front end) con la plataforma de firebase.
 import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+//Traigo una funcion que me conecte con el servicio de base de datos de firebase
+import { getFirestore } from "firebase/firestore"
 
-// Your web app's Firebase configuration
+// Estas son mis llaves de acceso
 const firebaseConfig = {
   apiKey: "AIzaSyBiQXj7cdECQsJLj70SAEyFS1QYd_GxTys",
   authDomain: "app-react-coderhouse-a7911.firebaseapp.com",
@@ -13,5 +13,10 @@ const firebaseConfig = {
   appId: "1:409351976524:web:270a204520a6d18ba866e9"
 };
 
-// Initialize Firebase
+// Variable que representa la plataforma
 const app = initializeApp(firebaseConfig);
+
+//Variable que representa la pestaña de Firebase Database"
+ export const db = getFirestore(app)
+
+ console.log(db)
