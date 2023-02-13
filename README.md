@@ -6,7 +6,7 @@
 
 Para poder utilizar este repositorio se necesita clonar el mismo mediante este comando en su consola:
 
- `$ git clone `
+ `$ git clone https://github.com/AgustinRamos05/reactjs-coderhouse `
 
 ## Tecnologias utilizadas
 
