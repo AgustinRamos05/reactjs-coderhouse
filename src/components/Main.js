@@ -11,7 +11,7 @@ const Main = () => {
         <Route
           path="/"element={
             <>
-              <h1 className="main__title">Welcome to IponeShop</h1>
+              <h1 className="main__title">Bienvenido a IponeShop</h1>
               <img
                 src="/img/592932.jpg"
                 className="main__banner"

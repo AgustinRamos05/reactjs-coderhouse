@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemDetail from "./ItemDetail";
+import { db } from "../firebase";
+import { collection, doc, getDoc } from "firebase/firestore";
 
 const ItemDetailContainer = () => {
   const [load, setLoad] = useState(false);
@@ -8,13 +10,14 @@ const ItemDetailContainer = () => {
   let { id } = useParams();
 
   useEffect(() => {
-    fetch("/stock.json")
+    const productCollection = collection(db, "products");
+    const reference = doc(productCollection, id);
+    const firestoreRequest = getDoc(reference);
+
+    firestoreRequest
       .then((res) => {
-        const product = res.json();
-        return product;
-      })
-      .then((product) => {
-        setProducts(product.find((prod) => prod.id === id ));
+        const product = res.data();
+        setProducts(product);
         setLoad(true);
       })
       .catch((err) => {
@@ -25,7 +28,7 @@ const ItemDetailContainer = () => {
   return (
     <>
       {load ? "" : <h3>Cargando...</h3>}
-      <ItemDetail product={products}/>
+      <ItemDetail product={products} />
     </>
   );
 };

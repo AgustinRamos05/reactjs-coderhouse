@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useCart } from './CustomProvider'
 
 
-const ItemCount = ({stock, onAdd, product, id}) => {
+const ItemCount = ({stock, product, id}) => {
 
     const [accountant,setAccontant] = useState(1)
 
@@ -17,7 +17,6 @@ const ItemCount = ({stock, onAdd, product, id}) => {
         setAccontant(accountant <= 1 ? accountant : accountant - 1);
     }
     const handleConfirm = () => {
-        onAdd(accountant);
         productsQuantity(accountant);
         isInCart(id);
         addToCart(product, id, accountant);

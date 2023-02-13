@@ -77,4 +77,35 @@
       padding: 0.5rem;
     }
   }
+  .cart-container{
+    margin: 3rem;
+    .cart-product{
+      margin: 1rem auto;
+      display: flex;
+      width: 40rem;
+      height: 15rem;
+      justify-content: space-around;
+      border: 2px rgb(187, 187, 187) solid;
+      background-color: white;
+      &__img{
+        width: 14rem;
+        
+      }
+      &__quantity{
+        font-size: 1.1rem;
+        font-weight: 300;
+        text-align: center;
+      }
+      &__title{
+        font-size: 1.1rem;
+        font-weight: 300;
+      }
+      &__price{
+        font-size: 1rem;
+      }
+      &__btn{
+        height: 2rem;
+      }
+    }
+  }
 }

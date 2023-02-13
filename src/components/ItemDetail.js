@@ -2,7 +2,6 @@ import React from "react";
 import ItemCount from "./ItemCount";
 
 const ItemDetail = ({ product }) => {
-  const onAdd = () => {};
 
   return (
     <div key={product.id} className="product-detail">
@@ -13,7 +12,6 @@ const ItemDetail = ({ product }) => {
         <p className="product-detail__description">{product.description}</p>
         <ItemCount
           stock={product.stock}
-          onAdd={onAdd}
           product={product}
           id={product.id}
         />

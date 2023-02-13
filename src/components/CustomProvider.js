@@ -11,49 +11,50 @@ export const useCart = () => {
 
 const CustomProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
-  const [totalProduscts, setTotalProducts] = useState(0);
-  const [quantity, setQuantity] = useState(0)
+  const [totalProducts, setTotalProducts] = useState(0);
 
   const isInCart = (id) => {
-    return cart.some((e) => e.id === id);
+    return console.log(cart.some((e) => e.id === id))
   };
 
   const addToCart = (product, id, accountant) => {
     if (isInCart(id)) {
       //Enviamos cantidad de un producto que esta en el carrito
-      setQuantity(quantity + accountant)
-      product.quantity = quantity
+       product.quantity = product.quantity + accountant;
     } else {
       const copy = [...cart];
       copy.push(product);
       setCart(copy);
-      console.log(copy);
+      console.log(cart);
       //Enviando cantidad de un producto el cual agregamos al carrito
-      setQuantity(accountant)
-      product.quantity = quantity
+      product.quantity = accountant
     }
   };
-  const removeFromCart = (id) => {
-    setCart(cart.filter((prod) => prod.id !== id));
+  const removeFromCart = (id, product) => {
+    if (product.quantity > 1) {
+      product.quantity = product.quantity - 1
+      setTotalProducts(totalProducts - 1)
+    } else {
+      setCart(cart.filter((prod) => prod.id !== id));
+      setTotalProducts(totalProducts - 1)
+    }
   };
   const emptyCart = () => {
     setCart([]);
+    setTotalProducts(0);
   };
 
   const productsQuantity = (accountant) => {
-    if (totalProduscts === 0) {
+    if (totalProducts === 0) {
       setTotalProducts(accountant);
     } else {
-      setTotalProducts(totalProduscts + accountant);
+      setTotalProducts(totalProducts + accountant);
     }
   };
 
-  console.log(cart);
-
   const contextValue = {
     cart: cart,
-    totalProducts: totalProduscts,
-    quantity: quantity,
+    totalProducts: totalProducts,
     setTotalProducts: setTotalProducts,
     isInCart: isInCart,
     addToCart: addToCart,

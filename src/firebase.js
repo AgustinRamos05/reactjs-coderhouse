@@ -19,4 +19,3 @@ const app = initializeApp(firebaseConfig);
 //Variable que representa la pestaña de Firebase Database"
  export const db = getFirestore(app)
 
- console.log(db)
