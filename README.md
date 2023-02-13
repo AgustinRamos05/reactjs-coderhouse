@@ -16,7 +16,3 @@ Se utilizaron las siguientes tecnologias:
 * Firebase : Para generar una base de datos mediante FireStore en donde almacenamos en distintas colecciones nuestros productos y detalles de ventas.
 * React-router-dom : Para generar diferentes rutas y darle una mejor navegabilidad al sitio web.
 * sass: Para una mejor maquetacion de nuestro codigo css, y asi darle forma al front y lograr captar la atencion del usuario.
-
-### `npm start`
-
-
