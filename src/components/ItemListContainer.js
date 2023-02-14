@@ -8,14 +8,13 @@ const ItemListContainer = () => {
   const [load, setLoad] = useState(false);
   const [products, setProducts] = useState([]);
   const { id } = useParams();
+  
 
 
   useEffect(() => {
     const productCollection = collection(db, "products");
-    const filter = query(productCollection, where("category", "==", id));
-
-    const firestoreRequest = getDocs(id ? filter : productCollection )
-    
+    const data = id ? query(productCollection, where("category","==",id )) : productCollection
+    const firestoreRequest = getDocs(data)
     
     firestoreRequest
         .then((res) => {
@@ -23,7 +22,7 @@ const ItemListContainer = () => {
             ...doc.data(),
             id: doc.id,
           }));
-          setProducts(product);
+          setProducts(product)
           setLoad(true);
         })
         .catch((err) => {

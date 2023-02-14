@@ -14,7 +14,7 @@ const CustomProvider = ({ children }) => {
   const [totalProducts, setTotalProducts] = useState(0);
 
   const isInCart = (id) => {
-    return console.log(cart.some((e) => e.id === id))
+    return cart.some((e) => e.id === id)
   };
 
   const addToCart = (product, id, accountant) => {

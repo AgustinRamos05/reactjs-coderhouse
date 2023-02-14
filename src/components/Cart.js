@@ -47,15 +47,15 @@ const Cart = () => {
   };
 
   return (
-    <div>
+    <div className="cart-content">
       <div className="cart-container">
         {cart.map((product) => {
           return (
             <CartItem product={product} key={product.id} id={product.id} />
           );
         })}
+        <button onClick={handleEmptyCart}>Vaciar carrito</button>
       </div>
-      <button onClick={handleEmptyCart}>Vaciar carrito</button>
       <div>
         <input type="text" onChange={handelChangeName} placeholder="Nombre" />
       </div>
